@@ -1,22 +1,27 @@
 ---
-description: >-
-  Assign a user a role using PHPMyAdmin
+description: Assign a user a role using phpMyAdmin
 ---
 
-# Placing a role using PHPMyAdmin
+# Assigning roles to a player
 
 ## Placing role structure
 
-- **assignID:** Add a unique number to the assing (optional)
-- **roleID:** ID of the role you want to place (from the "roles" table)
-- **accountID:** ID of the account user you want to place (from the "accounts" table)
+| Name      | Information                                         | Args                        |
+| --------- | --------------------------------------------------- | --------------------------- |
+| assignID  | Add a unique number to the assing                   | (optional)                  |
+| roleID    | [ID of the role](create-roles.md) you want to place | (from the "roles" table)    |
+| accountID | ID of the account user you want to place            | (from the "accounts" table) |
 
 ## Placing a role to a user
 
-1. Open phpMyAdmin & login.
-2. Select the database starting with "gdps_".
-3. Look for "roleassign".
-4. Open the insert tab.
-5. Fill out all fields correctly.
-6. Click on "Go".
-7. You have assigned a role to a user!
+Learn to access phpMyAdmin: 🔐 [Accessing to phpMyAdmin](site-structure.md)
+
+Learn phpMyAdmin structure: 🔐 [Site Structure](site-structure.md)
+
+1. Access to your phpMyAdmin database and Look for "roleassign".
+2. Open the insert tab.
+3. Fill out all fields correctly.
+4. Click on "Go".
+5. You have assigned a role to a user!
+
+If the user has a moderator-badge (with the req permission enabled), they can navigate in-game to Settings -> "Help" -> "Req" to activate the moderator buttons on levels.
